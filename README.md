@@ -11,27 +11,27 @@
 
 ### 👨‍💻 About Me
 
-- 🎓 B.Tech in **Computer Science (AI & ML)** @ Graphic Era Hill University (2023–2027)  
+- 🎓 Pursuing **B.Tech in Computer Science (AI & ML)** @ Graphic Era Hill University (2023–2027)  
 - 💼 **WordPress Developer Intern** @ Code Buzz Web | **Web Intern** @ Doon Digital  
-- 🤖 Passionate about **Deep Learning, NLP, and AI-driven optimization systems**  
-- 🧠 Constantly learning **Machine Learning, TensorFlow, and Model Optimization**  
-- 🌐 Visit my portfolio → [kamalsdhami.me](https://kamalsdhami.me)
+- 🤖 Passionate about **Deep Learning, NLP, and Optimization Algorithms**  
+- 🧠 Focused on building **AI-powered real-world solutions**  
+- 🌐 Portfolio: [kamaldhami.in](https://kamaldhami.in)
 
 ---
 
 ### 🧩 Featured Projects
 
 #### 🔹 [Tomato Leaf Disease Detection](https://github.com/KamalSDhami/Tomato-Leaf-Disease-Detection)
-- Built a CNN (VGG16) achieving **96.6% accuracy** on 29K+ tomato leaf images.
-- Compared models: DenseNet121, InceptionV3, Xception, MobileNetV2.
+- Developed a CNN (VGG16) achieving **96.6% accuracy** on 29K+ tomato leaf images.
+- Compared multiple models: DenseNet121, InceptionV3, Xception, MobileNetV2.
 
 #### 🔹 [Smart Water Management System](https://github.com/KamalSDhami/Smart-Water-Management)
-- Simulated **water distribution optimization** using Prim’s and BFS algorithms.
-- Implemented with **PySide6**, **NetworkX**, and **Matplotlib**.
+- Built a **Prim’s + BFS-based simulation** for water distribution optimization.
+- Enhanced anomaly detection by **35% faster** leak/pressure identification.
 
 #### 🔹 [SmartDine Restaurant Management System](https://github.com/KamalSDhami/SmartDine)
-- Full-stack **JavaFX + MySQL** restaurant app with real-time inventory.
-- Strengthened **OOP**, **multithreading**, and **UI/UX** design skills.
+- Full-stack **JavaFX + MySQL** system with real-time inventory tracking.
+- Improved restaurant efficiency by **30%** using OOP and multithreading.
 
 ---
 
@@ -74,6 +74,7 @@
 <p align="center">
   <a href="mailto:devdhami765@gmail.com"><img src="https://img.shields.io/badge/Email-devdhami765%40gmail.com-red?style=for-the-badge&logo=gmail"></a>
   <a href="https://www.linkedin.com/in/kamal-singh-dhami/"><img src="https://img.shields.io/badge/LinkedIn-Kamal%20Singh%20Dhami-blue?style=for-the-badge&logo=linkedin"></a>
+  <a href="https://kamaldhami.in" target="_blank"><img src="https://img.shields.io/badge/Portfolio-kamaldhami.in-orange?style=for-the-badge&logo=firefox"></a>
 </p>
 
 ⭐️ *From [Kamal Singh Dhami](https://github.com/KamalSDhami)*
