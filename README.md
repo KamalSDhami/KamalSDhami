@@ -65,7 +65,7 @@
 ### 🕓 Latest Project Commit
 
 💡 **Most Recent Repository:**  
-➡️ [`{{LATEST_REPO}}`](https://github.com/KamalSDhami/{{LATEST_REPO}})
+➡️ [`KamalSDhami`](https://github.com/KamalSDhami/KamalSDhami)
 
 ---
 
