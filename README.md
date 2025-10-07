@@ -2,7 +2,7 @@
 <h3 align="center">🚀 AI & ML | WordPress Developer | CS Undergrad @ Graphic Era Hill University</h3>
 
 <p align="center">
-  <a href="https://kamalsdhami.me" target="_blank"><img src="https://img.shields.io/badge/Website-kamalsdhami.me-red?style=for-the-badge&logo=google-chrome"></a>
+  <a href="https://kamaldhami.in" target="_blank"><img src="https://img.shields.io/badge/Website-kamaldhami.in-red?style=for-the-badge&logo=google-chrome"></a>
   <a href="https://www.linkedin.com/in/kamal-singh-dhami/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Kamal%20Singh%20Dhami-blue?style=for-the-badge&logo=linkedin"></a>
   <a href="https://github.com/KamalSDhami" target="_blank"><img src="https://img.shields.io/badge/GitHub-KamalSDhami-black?style=for-the-badge&logo=github"></a>
 </p>
