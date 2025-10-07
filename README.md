@@ -1,37 +1,79 @@
-<h1 align="center">Hi 👋, I'm KamalSDhami</h1>
-<h3 align="center">A passionate developer from India</h3>
+<h1 align="center">Hi 👋, I'm Kamal Singh Dhami</h1>
+<h3 align="center">🚀 AI & ML | WordPress Developer | CS Undergrad @ Graphic Era Hill University</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=kamalsdhami&label=Profile%20views&color=0e75b6&style=flat" alt="kamalsdhami" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=kamalsdhami" alt="kamalsdhami" /></a> </p>
-
-- 🔭 I’m currently working on [Organiser](https://github.com/KamalSDhami/Organiser)
-
-- 🌱 I’m currently learning **AI & ML**
-
-- 💬 Ask me about **Python , Linux**
-
-- 📫 How to reach me **devdhami765@gmail.com**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/kamalsdhami" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="kamalsdhami" height="30" width="40" /></a>
-<a href="https://www.linkedin.com/in/kamal-singh-dhami/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="kamalsdhami" height="30" width="40" /></a>
-<a href="https://fb.com/kamal.dhami.3994" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="kamal.dhami.3994" height="30" width="40" /></a>
-<a href="https://www.instagram.com/kamal_s_dhami/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="kamalsdhami" height="30" width="40" /></a>
-<a href="https://www.youtube.com/@KamalSDhami" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="kamalsdhami" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/kamaldhami" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="kamaldhami" height="30" width="40" /></a>
-<a href="https://discord.gg/kamalsdhami2314x" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="kamalsdhami2314x" height="30" width="40" /></a>
+<p align="center">
+  <a href="https://kamalsdhami.me" target="_blank"><img src="https://img.shields.io/badge/Website-kamalsdhami.me-red?style=for-the-badge&logo=google-chrome"></a>
+  <a href="https://www.linkedin.com/in/kamal-singh-dhami/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Kamal%20Singh%20Dhami-blue?style=for-the-badge&logo=linkedin"></a>
+  <a href="https://github.com/KamalSDhami" target="_blank"><img src="https://img.shields.io/badge/GitHub-KamalSDhami-black?style=for-the-badge&logo=github"></a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+---
 
-<h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/https://www.buymeacoffee.com/devdhami76x"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/devdhami76x" /></a></p><br><br>
+### 👨‍💻 About Me
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=kamalsdhami&show_icons=true&locale=en&layout=compact" alt="kamalsdhami" /></p>
+- 🎓 B.Tech in **Computer Science (AI & ML)** @ Graphic Era Hill University (2023–2027)  
+- 💼 **WordPress Developer Intern** @ Code Buzz Web | **Web Intern** @ Doon Digital  
+- 🤖 Passionate about **Deep Learning, NLP, and AI-driven optimization systems**  
+- 🧠 Constantly learning **Machine Learning, TensorFlow, and Model Optimization**  
+- 🌐 Visit my portfolio → [kamalsdhami.me](https://kamalsdhami.me)
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=kamalsdhami&show_icons=true&locale=en" alt="kamalsdhami" /></p>
+---
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=kamalsdhami&" alt="kamalsdhami" /></p>
+### 🧩 Featured Projects
+
+#### 🔹 [Tomato Leaf Disease Detection](https://github.com/KamalSDhami/Tomato-Leaf-Disease-Detection)
+- Built a CNN (VGG16) achieving **96.6% accuracy** on 29K+ tomato leaf images.
+- Compared models: DenseNet121, InceptionV3, Xception, MobileNetV2.
+
+#### 🔹 [Smart Water Management System](https://github.com/KamalSDhami/Smart-Water-Management)
+- Simulated **water distribution optimization** using Prim’s and BFS algorithms.
+- Implemented with **PySide6**, **NetworkX**, and **Matplotlib**.
+
+#### 🔹 [SmartDine Restaurant Management System](https://github.com/KamalSDhami/SmartDine)
+- Full-stack **JavaFX + MySQL** restaurant app with real-time inventory.
+- Strengthened **OOP**, **multithreading**, and **UI/UX** design skills.
+
+---
+
+### 🛠️ Tech Stack
+
+**Languages:** C, C++, Python, Java, JavaScript  
+**Frameworks:** TensorFlow, Keras, Scikit-learn, React  
+**Databases:** MySQL, PostgreSQL, MongoDB, Supabase  
+**Tools:** Git, Docker, Kaggle, Hugging Face  
+**Soft Skills:** Collaboration, Leadership, Creative Problem Solving
+
+---
+
+### 🏆 Certifications
+
+- Google Cloud Arcade Program (Google)  
+- Large Language Models (NPTEL)  
+- Machine Learning (NPTEL)
+
+---
+
+### 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=KamalSDhami&show_icons=true&theme=radical" alt="Kamal's GitHub stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=KamalSDhami&theme=radical" alt="GitHub Streak" />
+</p>
+
+---
+
+### 🕓 Latest Project Commit
+
+💡 **Most Recent Repository:**  
+➡️ [`{{LATEST_REPO}}`](https://github.com/KamalSDhami/{{LATEST_REPO}})
+
+---
+
+### 🤝 Connect with Me
+
+<p align="center">
+  <a href="mailto:devdhami765@gmail.com"><img src="https://img.shields.io/badge/Email-devdhami765%40gmail.com-red?style=for-the-badge&logo=gmail"></a>
+  <a href="https://www.linkedin.com/in/kamal-singh-dhami/"><img src="https://img.shields.io/badge/LinkedIn-Kamal%20Singh%20Dhami-blue?style=for-the-badge&logo=linkedin"></a>
+</p>
+
+⭐️ *From [Kamal Singh Dhami](https://github.com/KamalSDhami)*
