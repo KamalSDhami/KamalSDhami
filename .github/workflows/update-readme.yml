@@ -5,9 +5,14 @@ on:
     - cron: "0 */6 * * *" # every 6 hours
   workflow_dispatch:
 
+permissions:
+  contents: write  # allow workflow to push changes to the repo
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    env:
+      GH_USER: ${{ github.repository_owner }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -20,11 +25,20 @@ jobs:
           fi
 
       - name: Get latest repo and update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
 
-          # Get the latest repository name
-          LATEST=$(curl -s "https://api.github.com/users/KamalSDhami/repos?sort=updated&direction=desc&per_page=5" | jq -r '.[0].name')
+          USER="${GH_USER}"
+          echo "Fetching latest repo for user: ${USER}"
+
+          # Get the latest non-archived, non-fork repository excluding the profile repo itself
+          LATEST=$(curl -fsSL \
+            -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/users/${USER}/repos?sort=updated&direction=desc&per_page=100" \
+            | jq -r --arg prof "${USER}" '[ .[] | select((.archived==false) and (.fork==false) and (.name != $prof)) ][0].name')
           echo "Latest repository: $LATEST"
 
           if [ -z "${LATEST}" ] || [ "${LATEST}" = "null" ]; then
@@ -50,12 +64,19 @@ jobs:
           grep -n -A 3 -B 3 "Latest project" README.md || true
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
           # Get the latest repo name again for commit message
-          LATEST=$(curl -s "https://api.github.com/users/KamalSDhami/repos?sort=updated&direction=desc&per_page=5" | jq -r '.[0].name')
+          USER="${GH_USER}"
+          LATEST=$(curl -fsSL \
+            -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/users/${USER}/repos?sort=updated&direction=desc&per_page=100" \
+            | jq -r --arg prof "${USER}" '[ .[] | select((.archived==false) and (.fork==false) and (.name != $prof)) ][0].name')
           
           git add README.md
           
@@ -64,6 +85,8 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "🤖 Auto-update: Latest repository is now $LATEST"
-            git push
+            BRANCH="${{ github.ref_name }}"
+            # push to the same branch the workflow was triggered from
+            git push origin HEAD:"${BRANCH}"
             echo "Successfully pushed changes"
           fi
