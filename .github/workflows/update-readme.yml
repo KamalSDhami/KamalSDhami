@@ -4,12 +4,19 @@ on:
   schedule:
     - cron: "0 */6 * * *" # every 6 hours
   workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - README.md
+      - .github/workflows/update-readme.yml
 
 permissions:
   contents: write  # allow workflow to push changes to the repo
 
 jobs:
   update-readme:
+    # Avoid infinite loops when the bot commits the README
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     env:
       GH_USER: ${{ github.repository_owner }}
