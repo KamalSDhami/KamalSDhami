@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="580" height="210" viewBox="0 0 580 210" role="img" aria-labelledby="t d">
-<title id="t">SRE Incident Response Env</title>
-<desc id="d">An agent gets paged, investigates a fake distributed system with CLI commands, and must find the root cause.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="324" viewBox="0 0 480 324" role="img" aria-labelledby="t d">
+<title id="t">SRE Incident Env</title>
+<desc id="d">An agent gets paged, digs through a fake distributed system, and has to find the root cause.</desc>
 <defs>
   <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#16202b" stroke-width=".6"/></pattern>
   <radialGradient id="halo"><stop stop-color="#ff7b72" stop-opacity=".22"/><stop offset="1" stop-color="#ff7b72" stop-opacity="0"/></radialGradient>
-  <clipPath id="clip"><rect width="580" height="210" rx="14"/></clipPath>
+  <clipPath id="clip"><rect width="480" height="324" rx="16"/></clipPath>
 </defs>
 <style>
   .sans{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace}
@@ -18,19 +18,19 @@
   @media(prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 <g clip-path="url(#clip)">
-  <rect width="580" height="210" fill="#0b0f14"/>
-  <rect width="580" height="210" fill="url(#grid)"/>
-  <circle cx="490" cy="105" r="110" fill="url(#halo)"/>
-  <text class="mono" x="24" y="40" font-size="12" fill="#ff7b72">openenv · agents</text>
-  <text class="sans" x="24" y="72" font-size="24" font-weight="700" fill="#e6edf3" letter-spacing="-.3">SRE Incident Response Env</text>
-  <text class="sans" x="24" y="104" font-size="14" fill="#8b949e">An agent gets paged, investigates a fake distributed</text><text class="sans" x="24" y="124" font-size="14" fill="#8b949e">system with CLI commands, and must find the root cause.</text>
-  <g class="mono" font-size="11.5"><rect x="24" y="165" width="62" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
-<text x="55" y="180" text-anchor="middle" fill="#8b949e">Python</text>
-<rect x="94.4" y="165" width="62" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
-<text x="126" y="180" text-anchor="middle" fill="#8b949e">Docker</text>
-<rect x="164.8" y="165" width="70" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
-<text x="200" y="180" text-anchor="middle" fill="#8b949e">OpenEnv</text></g>
-  <g transform="translate(400,15)">
+  <rect width="480" height="324" fill="#0b0f14"/>
+  <rect width="480" height="324" fill="url(#grid)"/>
+  <circle cx="377" cy="181" r="110" fill="url(#halo)"/>
+  <text class="mono" x="26" y="46" font-size="15" fill="#ff7b72">openenv · agents</text>
+  <text class="sans" x="26" y="88" font-size="32" font-weight="700" fill="#e6edf3" letter-spacing="-.4">SRE Incident Env</text>
+  <text class="sans" x="26" y="136" font-size="20" fill="#8b949e">An agent gets paged, digs</text><text class="sans" x="26" y="164" font-size="20" fill="#8b949e">through a fake distributed</text><text class="sans" x="26" y="192" font-size="20" fill="#8b949e">system, and has to find</text><text class="sans" x="26" y="220" font-size="20" fill="#8b949e">the root cause.</text>
+  <g class="mono" font-size="15"><rect x="26" y="273" width="72" height="30" rx="15" fill="#10161d" stroke="#1f2a36"/>
+<text x="62" y="294" text-anchor="middle" fill="#8b949e">Python</text>
+<rect x="106" y="273" width="72" height="30" rx="15" fill="#10161d" stroke="#1f2a36"/>
+<text x="142" y="294" text-anchor="middle" fill="#8b949e">Docker</text>
+<rect x="186" y="273" width="81" height="30" rx="15" fill="#10161d" stroke="#1f2a36"/>
+<text x="226" y="294" text-anchor="middle" fill="#8b949e">OpenEnv</text></g>
+  <g transform="translate(300,104) scale(0.86)">
   <rect class="" x="18" y="40" width="40" height="26" rx="6" fill="#10161d" stroke="#1f2a36" stroke-width="1.4"/><text class="mono " x="38" y="57" font-size="9" text-anchor="middle" fill="#e6edf3">web</text>
   <rect class="" x="70" y="40" width="40" height="26" rx="6" fill="#10161d" stroke="#1f2a36" stroke-width="1.4"/><text class="mono " x="90" y="57" font-size="9" text-anchor="middle" fill="#e6edf3">api</text>
   <rect class="alert" x="122" y="40" width="40" height="26" rx="6" fill="#10161d" stroke="#ff7b72" stroke-width="1.4"/><text class="mono alert" x="142" y="57" font-size="9" text-anchor="middle" fill="#e6edf3">db</text>
@@ -42,6 +42,6 @@
   <text class="mono" x="26" y="134" font-size="9" fill="#8b949e">leak &lt;- payment-svc</text>
   <text class="mono" x="26" y="150" font-size="9" fill="#f0883e">&gt; diagnose root_cause</text>
   <rect class="scan" x="22" y="94" width="40" height="62" rx="6" fill="#4a9eff" opacity=".07"/></g>
-  <rect x=".5" y=".5" width="579" height="209" rx="14" fill="none" stroke="#1f2a36"/>
+  <rect x=".5" y=".5" width="479" height="323" rx="16" fill="none" stroke="#1f2a36"/>
 </g>
 </svg>

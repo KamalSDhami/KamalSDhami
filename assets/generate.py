@@ -10,7 +10,7 @@ and all motion is CSS keyframes so it plays inside an <img>.
 To add a project: write an art_<slug>() function that returns
 (svg_fragment, css) drawn inside a 180x180 box, add a row to CARDS,
 run the script, and reference assets/cards/<slug>.svg from README.md.
-Pitch lines are wrapped by hand; keep each under about 52 characters.
+Pitches wrap automatically; the script stops if one needs more than 4 lines.
 
 Preview without pushing (Windows, Edge installed):
     msedge --headless=new --window-size=580,210 --screenshot=out.png file:///.../assets/cards/<slug>.svg
@@ -121,33 +121,57 @@ def banner():
 
 
 # ---------------------------------------------------------------- cards
-CARD_W, CARD_H = 580, 210
-ART_X = 400  # motif area starts here, 180px wide
+# Cards are shown 400px wide on desktop (two per row) and shrink to about
+# 290px on phones, so type is sized for that: the pitch stays ~12px there.
+CARD_W, CARD_H = 480, 324
+PAD = 26
+ART_X, ART_Y, ART_S = 300, 104, 0.86   # motif box (180x180, scaled)
+PITCH_SIZE, PITCH_LH, PITCH_W = 20, 28, 266
+CHIP_SIZE = 15
+
+
+def wrap(text, width_px, size):
+    """Greedy word wrap using an average sans glyph width."""
+    max_chars = int(width_px / (size * 0.5))
+    lines, cur = [], ""
+    for word in text.split():
+        trial = f"{cur} {word}".strip()
+        if len(trial) <= max_chars:
+            cur = trial
+        else:
+            lines.append(cur)
+            cur = word
+    if cur:
+        lines.append(cur)
+    return lines
 
 
 def chips(tags, y):
-    out, x = [], 24
+    out, x = [], PAD
     for t in tags:
-        w = 9 + len(t) * 7.4 + 9
-        out.append(f'<rect x="{x}" y="{y-15}" width="{w:.0f}" height="22" rx="11" fill="{PANEL}" stroke="{BORDER}"/>')
+        w = 18 + len(t) * CHIP_SIZE * 0.6
+        out.append(f'<rect x="{x:.0f}" y="{y-21}" width="{w:.0f}" height="30" rx="15" fill="{PANEL}" stroke="{BORDER}"/>')
         out.append(f'<text x="{x + w/2:.0f}" y="{y}" text-anchor="middle" fill="{MUTED}">{esc(t)}</text>')
         x += w + 8
     return "\n".join(out)
 
 
-def card(slug, title, kicker, lines, tags, art, art_css, accent):
-    desc = " ".join(lines)
+def card(slug, title, kicker, pitch, tags, art, art_css, accent):
+    lines = wrap(pitch, PITCH_W, PITCH_SIZE)
+    if len(lines) > 4:
+        raise SystemExit(f"{slug}: pitch wraps to {len(lines)} lines, keep it to 4")
     body = "".join(
-        f'<text class="sans" x="24" y="{104 + i*20}" font-size="14" fill="{MUTED}">{esc(l)}</text>'
+        f'<text class="sans" x="{PAD}" y="{136 + i*PITCH_LH}" font-size="{PITCH_SIZE}" fill="{MUTED}">{esc(l)}</text>'
         for i, l in enumerate(lines)
     )
+    cx, cy = ART_X + 90 * ART_S, ART_Y + 90 * ART_S
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{CARD_W}" height="{CARD_H}" viewBox="0 0 {CARD_W} {CARD_H}" role="img" aria-labelledby="t d">
 <title id="t">{esc(title)}</title>
-<desc id="d">{esc(desc)}</desc>
+<desc id="d">{esc(pitch)}</desc>
 <defs>
   <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="{GRID}" stroke-width=".6"/></pattern>
   <radialGradient id="halo"><stop stop-color="{accent}" stop-opacity=".22"/><stop offset="1" stop-color="{accent}" stop-opacity="0"/></radialGradient>
-  <clipPath id="clip"><rect width="{CARD_W}" height="{CARD_H}" rx="14"/></clipPath>
+  <clipPath id="clip"><rect width="{CARD_W}" height="{CARD_H}" rx="16"/></clipPath>
 </defs>
 <style>
   .sans{{font-family:{SANS}}} .mono{{font-family:{MONO}}}
@@ -157,13 +181,13 @@ def card(slug, title, kicker, lines, tags, art, art_css, accent):
 <g clip-path="url(#clip)">
   <rect width="{CARD_W}" height="{CARD_H}" fill="{BG}"/>
   <rect width="{CARD_W}" height="{CARD_H}" fill="url(#grid)"/>
-  <circle cx="{ART_X+90}" cy="105" r="110" fill="url(#halo)"/>
-  <text class="mono" x="24" y="40" font-size="12" fill="{accent}">{esc(kicker)}</text>
-  <text class="sans" x="24" y="72" font-size="24" font-weight="700" fill="{TEXT}" letter-spacing="-.3">{esc(title)}</text>
+  <circle cx="{cx:.0f}" cy="{cy:.0f}" r="110" fill="url(#halo)"/>
+  <text class="mono" x="{PAD}" y="46" font-size="15" fill="{accent}">{esc(kicker)}</text>
+  <text class="sans" x="{PAD}" y="88" font-size="32" font-weight="700" fill="{TEXT}" letter-spacing="-.4">{esc(title)}</text>
   {body}
-  <g class="mono" font-size="11.5">{chips(tags, 180)}</g>
-  <g transform="translate({ART_X},15)">{art}</g>
-  <rect x=".5" y=".5" width="{CARD_W-1}" height="{CARD_H-1}" rx="14" fill="none" stroke="{BORDER}"/>
+  <g class="mono" font-size="{CHIP_SIZE}">{chips(tags, CARD_H - 30)}</g>
+  <g transform="translate({ART_X},{ART_Y}) scale({ART_S})">{art}</g>
+  <rect x=".5" y=".5" width="{CARD_W-1}" height="{CARD_H-1}" rx="16" fill="none" stroke="{BORDER}"/>
 </g>
 </svg>'''
 
@@ -308,30 +332,24 @@ def art_virtukey():
 
 
 CARDS = [
-    ("prepology", "Prepology", "study planner · live", [
-        "Tells a NEET/JEE/GATE student what to do today",
-        "and re-plans when they fall behind. Elo + FSRS.",
-    ], ["Flutter", "Hono", "Supabase", "Groq"], art_prepology, BLUE),
-    ("linkup", "Link-UP", "teammate finder · live", [
-        "Find and form project teams at GEHU. Enforces",
-        "the one-per-section rule, with DMs and team chats.",
-    ], ["React", "TypeScript", "Supabase RLS"], art_linkup, PURPLE),
-    ("zencube", "ZenCube", "linux sandbox", [
-        "A small container runtime written to learn how",
-        "isolation and resource limits work, syscall by syscall.",
-    ], ["C", "Python", "Linux"], art_zencube, GREEN),
-    ("sre-env", "SRE Incident Response Env", "openenv · agents", [
-        "An agent gets paged, investigates a fake distributed",
-        "system with CLI commands, and must find the root cause.",
-    ], ["Python", "Docker", "OpenEnv"], art_sre, RED),
-    ("yukti", "Yukti", "discord bot", [
-        "Translates on demand and replies privately, so",
-        "channels stay clean. Rate limits per user and server.",
-    ], ["discord.py", "SQLite"], art_yukti, ORANGE),
-    ("virtukey", "VirtuKey", "windows utility", [
-        "Win+number jumps straight to a virtual desktop,",
-        "no slide animation. Works around the 24H2 DLL changes.",
-    ], ["AutoHotkey v2", "Windows 11"], art_virtukey, BLUE),
+    ("prepology", "Prepology", "study planner · live",
+     "Tells a NEET, JEE or GATE student what to study today, and re-plans when they fall behind.",
+     ["Flutter", "Hono", "Supabase", "Groq"], art_prepology, BLUE),
+    ("linkup", "Link-UP", "teammate finder · live",
+     "Find and form project teams at GEHU. Enforces the one-per-section rule.",
+     ["React", "TypeScript", "Supabase"], art_linkup, PURPLE),
+    ("zencube", "ZenCube", "linux sandbox",
+     "A small container runtime, written to learn isolation and resource limits one syscall at a time.",
+     ["C", "Python", "Linux"], art_zencube, GREEN),
+    ("sre-env", "SRE Incident Env", "openenv · agents",
+     "An agent gets paged, digs through a fake distributed system, and has to find the root cause.",
+     ["Python", "Docker", "OpenEnv"], art_sre, RED),
+    ("yukti", "Yukti", "discord bot",
+     "Translates on demand and replies privately, so channels stay clean.",
+     ["discord.py", "SQLite"], art_yukti, ORANGE),
+    ("virtukey", "VirtuKey", "windows utility",
+     "Win+number jumps straight to a virtual desktop, with no slide animation.",
+     ["AutoHotkey v2", "Windows 11"], art_virtukey, BLUE),
 ]
 
 def main():
@@ -339,10 +357,10 @@ def main():
     os.makedirs(os.path.join(OUT, "cards"), exist_ok=True)
     with open(os.path.join(OUT, "banner.svg"), "w", encoding="utf-8", newline="\n") as f:
         f.write(banner())
-    for slug, title, kicker, lines, tags, fn, accent in CARDS:
+    for slug, title, kicker, pitch, tags, fn, accent in CARDS:
         art, css = fn()
         with open(os.path.join(OUT, "cards", f"{slug}.svg"), "w", encoding="utf-8", newline="\n") as f:
-            f.write(card(slug, title, kicker, lines, tags, art, css, accent))
+            f.write(card(slug, title, kicker, pitch, tags, art, css, accent))
     print("wrote banner + %d cards to %s" % (len(CARDS), OUT))
 
 
