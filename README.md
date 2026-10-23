@@ -11,7 +11,7 @@ I build web products end to end, train the occasional CNN, and write about what 
 <p align="center">
 <a href="https://prepology.kamaldhami.in"><img src="assets/cards/prepology.svg" width="400" alt="Prepology: adaptive study planner for NEET, JEE and GATE. Live." /></a>
 <a href="https://github.com/KamalSDhami/Link-UP"><img src="assets/cards/linkup.svg" width="400" alt="Link-UP: teammate finder for project-based learning at GEHU. Live." /></a>
-<a href="https://github.com/KamalSDhami/ZenCube"><img src="assets/cards/zencube.svg" width="400" alt="ZenCube: a small Linux sandbox built to learn process isolation and resource limits." /></a>
+<a href="https://github.com/KamalSDhami/ZenCube"><img src="assets/cards/zencube.svg" width="400" alt="ZenCube: a process sandbox in C using resource limits, a chroot jail and a seccomp filter." /></a>
 <a href="https://github.com/KamalSDhami/meta"><img src="assets/cards/sre-env.svg" width="400" alt="SRE Incident Env: an OpenEnv environment where an agent finds the root cause of an incident." /></a>
 <a href="https://github.com/KamalSDhami/Yukti"><img src="assets/cards/yukti.svg" width="400" alt="Yukti: Discord translation bot that replies privately." /></a>
 <a href="https://github.com/KamalSDhami/VirtuKey"><img src="assets/cards/virtukey.svg" width="400" alt="VirtuKey: Windows 11 virtual desktop switcher." /></a>

@@ -261,7 +261,7 @@ def art_zencube():
     <path d="M128,72 L90,92 L90,132 L128,112 Z" fill="#0c1b12" stroke="{GREEN}" stroke-width="1.2"/>
   </g>
   <circle class="proc" cx="90" cy="92" r="5" fill="{ORANGE}"/>
-  <text class="mono" x="90" y="170" font-size="9.5" text-anchor="middle" fill="{MUTED}">clone · cgroups · rlimit</text>'''
+  <text class="mono" x="90" y="170" font-size="9.5" text-anchor="middle" fill="{MUTED}">rlimit · chroot · seccomp</text>'''
     return art, css
 
 
@@ -339,7 +339,7 @@ CARDS = [
      "Find and form project teams at GEHU. Enforces the one-per-section rule.",
      ["React", "TypeScript", "Supabase"], art_linkup, PURPLE),
     ("zencube", "ZenCube", "linux sandbox",
-     "A small container runtime, written to learn isolation and resource limits one syscall at a time.",
+     "A process sandbox in C, built to learn resource limits, chroot jails and seccomp.",
      ["C", "Python", "Linux"], art_zencube, GREEN),
     ("sre-env", "SRE Incident Env", "openenv · agents",
      "An agent gets paged, digs through a fake distributed system, and has to find the root cause.",
