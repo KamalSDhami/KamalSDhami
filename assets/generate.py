@@ -17,8 +17,6 @@ Preview without pushing (Windows, Edge installed):
 """
 import sys, os
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(os.path.abspath(__file__))
-os.makedirs(os.path.join(OUT, "cards"), exist_ok=True)
 
 # Palette: matches kamaldhami.in (bg #0a0a0a, accent #4a9eff).
 BG = "#0b0f14"
@@ -336,10 +334,17 @@ CARDS = [
     ], ["AutoHotkey v2", "Windows 11"], art_virtukey, BLUE),
 ]
 
-with open(os.path.join(OUT, "banner.svg"), "w", encoding="utf-8", newline="\n") as f:
-    f.write(banner())
-for slug, title, kicker, lines, tags, fn, accent in CARDS:
-    art, css = fn()
-    with open(os.path.join(OUT, "cards", f"{slug}.svg"), "w", encoding="utf-8", newline="\n") as f:
-        f.write(card(slug, title, kicker, lines, tags, art, css, accent))
-print("wrote banner + %d cards to %s" % (len(CARDS), OUT))
+def main():
+    OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(os.path.abspath(__file__))
+    os.makedirs(os.path.join(OUT, "cards"), exist_ok=True)
+    with open(os.path.join(OUT, "banner.svg"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(banner())
+    for slug, title, kicker, lines, tags, fn, accent in CARDS:
+        art, css = fn()
+        with open(os.path.join(OUT, "cards", f"{slug}.svg"), "w", encoding="utf-8", newline="\n") as f:
+            f.write(card(slug, title, kicker, lines, tags, art, css, accent))
+    print("wrote banner + %d cards to %s" % (len(CARDS), OUT))
+
+
+if __name__ == "__main__":
+    main()

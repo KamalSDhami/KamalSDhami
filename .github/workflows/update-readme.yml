@@ -4,9 +4,18 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - assets/live.py
+      - .github/workflows/update-readme.yml
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-readme
+  cancel-in-progress: false
 
 jobs:
   update-readme:
@@ -14,42 +23,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Rebuild the "Recently pushed to" block
+      # The built-in token cannot see private repos, so running without
+      # PROFILE_TOKEN would drop them from the dashboard. Skip instead.
+      - name: Check for PROFILE_TOKEN
+        id: token
         env:
-          GH_TOKEN: ${{ github.token }}
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
         run: |
-          set -euo pipefail
-
-          # Three most recently pushed repos, skipping forks and this profile repo.
-          LIST=$(curl -sf -H "Authorization: Bearer $GH_TOKEN" \
-            "https://api.github.com/users/KamalSDhami/repos?sort=pushed&direction=desc&per_page=20" \
-            | jq -r '[.[] | select(.fork | not) | select(.name != "KamalSDhami")][:3]
-                     | .[] | "- [\(.name)](\(.html_url))" + (if .description != null and .description != "" then " · \(.description)" else "" end)')
-
-          if [ -z "$LIST" ]; then
-            echo "Empty repo list from the API, leaving README untouched."
-            exit 1
+          if [ -z "$PROFILE_TOKEN" ]; then
+            echo "::notice::PROFILE_TOKEN secret is not set, skipping. See assets/live.py for how to create it."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
           fi
 
-          printf '%s\n' "$LIST" > /tmp/recent.md
-          echo "New block:"; cat /tmp/recent.md
-
-          # Replace everything between the markers with the new list.
-          awk -v blockfile=/tmp/recent.md '
-            /<!-- RECENT:START -->/ { print; while ((getline line < blockfile) > 0) print line; skip=1; next }
-            /<!-- RECENT:END -->/   { skip=0 }
-            !skip
-          ' README.md > /tmp/README.new
-          mv /tmp/README.new README.md
+      - name: Rebuild activity dashboard and README blocks
+        if: steps.token.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          PROFILE_TOKEN_SET: "true"
+        run: python3 assets/live.py
 
       - name: Commit if anything changed
+        if: steps.token.outputs.ok == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md assets/activity.svg
           if git diff --staged --quiet; then
             echo "Nothing changed."
           else
-            git commit -m "Refresh recently pushed repos"
+            git commit -m "Refresh activity dashboard"
             git push
           fi

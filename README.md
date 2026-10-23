@@ -4,6 +4,8 @@ I build web products end to end, train the occasional CNN, and write about what 
 
 [kamaldhami.in](https://kamaldhami.in) · [LinkedIn](https://www.linkedin.com/in/kamal-singh-dhami/) · [devdhami765@gmail.com](mailto:devdhami765@gmail.com)
 
+<sub>[Projects](#things-ive-built) · [Activity](#activity) · [Outside my own repos](#outside-my-own-repos) · [Writing](#writing) · [Stack](#stack)</sub>
+
 ## Things I've built
 
 <table>
@@ -25,22 +27,26 @@ Prepology is live at [prepology.kamaldhami.in](https://prepology.kamaldhami.in);
 
 Also on the shelf: [PixelShrink](https://github.com/KamalSDhami/PixelShrink), a drag-and-drop batch image compressor with background removal (Python, PySide6). A [tomato leaf disease](https://github.com/KamalSDhami/Tomato-Leaf-Disease-Detection) benchmark of VGG16, DenseNet121, InceptionV3, Xception and MobileNetV2 on 29K images, where VGG16 won at 96.6%. A [LangChain](https://github.com/KamalSDhami/LangChain) notebook, [Transformers](https://github.com/KamalSDhami/Transformers) experiments, a monitoring UI for [agent squads](https://github.com/KamalSDhami/AgentCrab), and a pile of lab work.
 
-## Recently pushed to
+## Activity
 
-<!-- RECENT:START -->
-- [LangChain](https://github.com/KamalSDhami/LangChain)
-- [alrlEEna-2026](https://github.com/KamalSDhami/alrlEEna-2026)
-- [Compiler_Lab](https://github.com/KamalSDhami/Compiler_Lab)
-<!-- RECENT:END -->
+<!-- ACTIVITY:START -->
+<a href="https://github.com/KamalSDhami?tab=repositories&sort=pushed"><img src="assets/activity.svg" width="100%" alt="732 contributions in the last year. Recently pushed: kamaldhami (private), prepology (private), LangChain, alrlEEna-2026, Compiler_Lab, Transformers." /></a>
 
-<sub>Updated every six hours by a GitHub Action.</sub>
+<sub>Recently pushed: kamaldhami (private) · prepology (private) · [LangChain](https://github.com/KamalSDhami/LangChain) · [alrlEEna-2026](https://github.com/KamalSDhami/alrlEEna-2026) · [Compiler_Lab](https://github.com/KamalSDhami/Compiler_Lab) · [Transformers](https://github.com/KamalSDhami/Transformers). Redrawn every six hours by a GitHub Action.</sub>
+<!-- ACTIVITY:END -->
+
+## Outside my own repos
+
+<!-- CONTRIB:START -->
+Nothing public yet. My work outside my own repos so far has been in private ones, so it shows up only in the heatmap above.
+<!-- CONTRIB:END -->
 
 ## Writing
 
-- [Architecting Link-UP: Real-Time State, WebSocket Multiplexing, and Supabase RLS](https://kamaldhami.in/blog)
-- [Pruning the DOM: How I Pushed WordPress Client Sites to 95+ Core Web Vitals](https://kamaldhami.in/blog)
-- [Plant Pathology at Scale: Benchmarking CNN Backbones on 29,000+ Leaf Images](https://kamaldhami.in/blog)
-- [Building from the Foothills: From Dehradun to Full-Stack Production Systems](https://kamaldhami.in/blog)
+- [Architecting Link-UP: Real-Time State, WebSocket Multiplexing, and Supabase RLS](https://kamaldhami.in/blog/building-secure-collaboration-platforms-with-react)
+- [Pruning the DOM: How I Pushed WordPress Client Sites to 95+ Core Web Vitals](https://kamaldhami.in/blog/wordpress-optimization-tips-for-better-performance)
+- [Plant Pathology at Scale: Benchmarking CNN Backbones on 29,000+ Leaf Images](https://kamaldhami.in/blog/deep-learning-with-cnns-practical-image-classification)
+- [Building from the Foothills: From Dehradun to Full-Stack Production Systems](https://kamaldhami.in/blog/my-journey-from-uttarakhand-to-tech-development)
 
 ## Stack
 
