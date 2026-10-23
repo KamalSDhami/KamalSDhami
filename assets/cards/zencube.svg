@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="210" viewBox="0 0 580 210" role="img" aria-labelledby="t d">
+<title id="t">ZenCube</title>
+<desc id="d">A small container runtime written to learn how isolation and resource limits work, syscall by syscall.</desc>
+<defs>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#16202b" stroke-width=".6"/></pattern>
+  <radialGradient id="halo"><stop stop-color="#7ee787" stop-opacity=".22"/><stop offset="1" stop-color="#7ee787" stop-opacity="0"/></radialGradient>
+  <clipPath id="clip"><rect width="580" height="210" rx="14"/></clipPath>
+</defs>
+<style>
+  .sans{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace}
+  
+  .wall{stroke-dasharray:6 6;animation:march 3s linear infinite}
+  .proc{animation:bounce 4s ease-in-out infinite}
+  .cube{animation:hover 5s ease-in-out infinite}
+  @keyframes march{to{stroke-dashoffset:-24}}
+  @keyframes bounce{0%,100%{transform:translate(0,0)}25%{transform:translate(22px,-14px)}50%{transform:translate(-18px,-6px)}75%{transform:translate(10px,16px)}}
+  @keyframes hover{50%{transform:translateY(-4px)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#clip)">
+  <rect width="580" height="210" fill="#0b0f14"/>
+  <rect width="580" height="210" fill="url(#grid)"/>
+  <circle cx="490" cy="105" r="110" fill="url(#halo)"/>
+  <text class="mono" x="24" y="40" font-size="12" fill="#7ee787">linux sandbox</text>
+  <text class="sans" x="24" y="72" font-size="24" font-weight="700" fill="#e6edf3" letter-spacing="-.3">ZenCube</text>
+  <text class="sans" x="24" y="104" font-size="14" fill="#8b949e">A small container runtime written to learn how</text><text class="sans" x="24" y="124" font-size="14" fill="#8b949e">isolation and resource limits work, syscall by syscall.</text>
+  <g class="mono" font-size="11.5"><rect x="24" y="165" width="25" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
+<text x="37" y="180" text-anchor="middle" fill="#8b949e">C</text>
+<rect x="57.4" y="165" width="62" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
+<text x="89" y="180" text-anchor="middle" fill="#8b949e">Python</text>
+<rect x="127.80000000000001" y="165" width="55" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
+<text x="155" y="180" text-anchor="middle" fill="#8b949e">Linux</text></g>
+  <g transform="translate(400,15)">
+  <rect class="wall" x="24" y="24" width="132" height="132" rx="10" fill="none" stroke="#7ee787" stroke-width="1.5" opacity=".8"/>
+  <g class="cube">
+    <path d="M90,52 L128,72 L90,92 L52,72 Z" fill="#17311f" stroke="#7ee787" stroke-width="1.2"/>
+    <path d="M52,72 L90,92 L90,132 L52,112 Z" fill="#102417" stroke="#7ee787" stroke-width="1.2"/>
+    <path d="M128,72 L90,92 L90,132 L128,112 Z" fill="#0c1b12" stroke="#7ee787" stroke-width="1.2"/>
+  </g>
+  <circle class="proc" cx="90" cy="92" r="5" fill="#f0883e"/>
+  <text class="mono" x="90" y="170" font-size="9.5" text-anchor="middle" fill="#8b949e">clone · cgroups · rlimit</text></g>
+  <rect x=".5" y=".5" width="579" height="209" rx="14" fill="none" stroke="#1f2a36"/>
+</g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="210" viewBox="0 0 580 210" role="img" aria-labelledby="t d">
+<title id="t">VirtuKey</title>
+<desc id="d">Win+number jumps straight to a virtual desktop, no slide animation. Works around the 24H2 DLL changes.</desc>
+<defs>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#16202b" stroke-width=".6"/></pattern>
+  <radialGradient id="halo"><stop stop-color="#4a9eff" stop-opacity=".22"/><stop offset="1" stop-color="#4a9eff" stop-opacity="0"/></radialGradient>
+  <clipPath id="clip"><rect width="580" height="210" rx="14"/></clipPath>
+</defs>
+<style>
+  .sans{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace}
+  
+  .sel{animation:jump 4s steps(1) infinite}
+  @keyframes jump{0%{transform:translate(0,0)}25%{transform:translate(70px,0)}50%{transform:translate(70px,56px)}75%{transform:translate(0,56px)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#clip)">
+  <rect width="580" height="210" fill="#0b0f14"/>
+  <rect width="580" height="210" fill="url(#grid)"/>
+  <circle cx="490" cy="105" r="110" fill="url(#halo)"/>
+  <text class="mono" x="24" y="40" font-size="12" fill="#4a9eff">windows utility</text>
+  <text class="sans" x="24" y="72" font-size="24" font-weight="700" fill="#e6edf3" letter-spacing="-.3">VirtuKey</text>
+  <text class="sans" x="24" y="104" font-size="14" fill="#8b949e">Win+number jumps straight to a virtual desktop,</text><text class="sans" x="24" y="124" font-size="14" fill="#8b949e">no slide animation. Works around the 24H2 DLL changes.</text>
+  <g class="mono" font-size="11.5"><rect x="24" y="165" width="114" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
+<text x="81" y="180" text-anchor="middle" fill="#8b949e">AutoHotkey v2</text>
+<rect x="146.2" y="165" width="92" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
+<text x="192" y="180" text-anchor="middle" fill="#8b949e">Windows 11</text></g>
+  <g transform="translate(400,15)">
+  <rect x="22" y="42" width="62" height="46" rx="6" fill="#10161d" stroke="#1f2a36"/><text class="mono" x="53" y="70" font-size="12" text-anchor="middle" fill="#8b949e">1</text><rect x="92" y="42" width="62" height="46" rx="6" fill="#10161d" stroke="#1f2a36"/><text class="mono" x="123" y="70" font-size="12" text-anchor="middle" fill="#8b949e">2</text><rect x="22" y="98" width="62" height="46" rx="6" fill="#10161d" stroke="#1f2a36"/><text class="mono" x="53" y="126" font-size="12" text-anchor="middle" fill="#8b949e">3</text><rect x="92" y="98" width="62" height="46" rx="6" fill="#10161d" stroke="#1f2a36"/><text class="mono" x="123" y="126" font-size="12" text-anchor="middle" fill="#8b949e">4</text>
+  <rect class="sel" x="19" y="39" width="68" height="52" rx="8" fill="none" stroke="#4a9eff" stroke-width="2"/>
+  <g class="mono" font-size="9.5">
+    <rect x="34" y="156" width="36" height="18" rx="4" fill="#10161d" stroke="#1f2a36"/><text x="52" y="168" text-anchor="middle" fill="#e6edf3">Win</text>
+    <text x="80" y="168" text-anchor="middle" fill="#8b949e">+</text>
+    <rect x="90" y="156" width="36" height="18" rx="4" fill="#10161d" stroke="#4a9eff"/><text x="108" y="168" text-anchor="middle" fill="#e6edf3">1..9</text>
+  </g></g>
+  <rect x=".5" y=".5" width="579" height="209" rx="14" fill="none" stroke="#1f2a36"/>
+</g>
+</svg>

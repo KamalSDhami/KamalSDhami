@@ -1,29 +1,29 @@
-# Kamal Singh Dhami
+<a href="https://kamaldhami.in"><img src="assets/banner.svg" width="100%" alt="Kamal Singh Dhami. Full-stack engineer and ML student in Dehradun, India." /></a>
 
-Full-stack engineer and ML student in Dehradun, India. I build web products end to end, train the occasional CNN, and write about what broke along the way.
+I build web products end to end, train the occasional CNN, and write about what broke along the way. Final year of B.Tech CS (AI & ML) at Graphic Era Hill University, class of 2027, and open to internships and full-time roles in full-stack or ML engineering.
 
 [kamaldhami.in](https://kamaldhami.in) · [LinkedIn](https://www.linkedin.com/in/kamal-singh-dhami/) · [devdhami765@gmail.com](mailto:devdhami765@gmail.com)
 
-## Now
-
-- Building [Prepology](https://prepology.kamaldhami.in), an adaptive study planner for NEET, JEE and GATE that decides what a student should do today and re-plans when they fall behind. Flutter, Hono, Supabase, one Oracle VM behind a Cloudflare tunnel.
-- Final year of B.Tech CS (AI & ML) at Graphic Era Hill University, class of 2027.
-- Open to internships and full-time roles in full-stack or ML engineering.
-
 ## Things I've built
 
-| | What it is | Built with |
-|---|---|---|
-| [Prepology](https://prepology.kamaldhami.in) | Study planner for Indian entrance exams. Elo ability estimates, FSRS spaced repetition, a mentor chat with guardrails, billing, an admin CMS. Source is private for now. | Flutter, Hono, Drizzle, Supabase, Groq |
-| [Link-UP](https://github.com/KamalSDhami/Link-UP) | Teammate finder for project-based learning at my university. Enforces the one-member-per-section rule, has recruitment boards, DMs and auto-created team chats. [Live](https://link-up.kamaldhami.in) | React, TypeScript, Supabase realtime + RLS |
-| [ZenCube](https://github.com/KamalSDhami/ZenCube) | A small Linux sandbox written to understand how containers work: process isolation and resource limits with raw syscalls, plus a GUI. | C, Python |
-| [SRE Incident Response Env](https://github.com/KamalSDhami/meta) | An OpenEnv environment where an agent is paged, investigates a fake distributed system with CLI-style commands, and has to find the root cause. Six hand-written scenarios. | Python, Docker |
-| [Yukti](https://github.com/KamalSDhami/Yukti) | Discord bot that translates on demand and replies privately so channels stay clean. Rate limits per user and per server. | discord.py, SQLite |
-| [VirtuKey](https://github.com/KamalSDhami/VirtuKey) | Windows 11 virtual desktop switcher. Win+number jumps straight to a desktop, no slide animation. Works around the 24H2 DLL export changes. | AutoHotkey v2 |
-| [PixelShrink](https://github.com/KamalSDhami/PixelShrink) | Drag-and-drop batch image compressor with background removal. | Python, PySide6, rembg |
-| [Tomato leaf disease detection](https://github.com/KamalSDhami/Tomato-Leaf-Disease-Detection) | Benchmarked VGG16, DenseNet121, InceptionV3, Xception and MobileNetV2 on 29K leaf images. VGG16 came out on top at 96.6%. | TensorFlow, Keras |
+<table>
+<tr>
+<td width="50%"><a href="https://prepology.kamaldhami.in"><img src="assets/cards/prepology.svg" width="580" alt="Prepology: adaptive study planner for NEET, JEE and GATE. Live." /></a></td>
+<td width="50%"><a href="https://github.com/KamalSDhami/Link-UP"><img src="assets/cards/linkup.svg" width="580" alt="Link-UP: teammate finder for project-based learning at GEHU. Live." /></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/KamalSDhami/ZenCube"><img src="assets/cards/zencube.svg" width="580" alt="ZenCube: a small Linux sandbox built to learn process isolation and resource limits." /></a></td>
+<td><a href="https://github.com/KamalSDhami/meta"><img src="assets/cards/sre-env.svg" width="580" alt="SRE Incident Response Env: an OpenEnv environment where an agent finds the root cause of an incident." /></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/KamalSDhami/Yukti"><img src="assets/cards/yukti.svg" width="580" alt="Yukti: Discord translation bot that replies privately." /></a></td>
+<td><a href="https://github.com/KamalSDhami/VirtuKey"><img src="assets/cards/virtukey.svg" width="580" alt="VirtuKey: Windows 11 virtual desktop switcher." /></a></td>
+</tr>
+</table>
 
-Smaller things live in the repo list: a [LangChain](https://github.com/KamalSDhami/LangChain) notebook, [Transformers](https://github.com/KamalSDhami/Transformers) experiments, a monitoring UI for [agent squads](https://github.com/KamalSDhami/AgentCrab), and a pile of lab work.
+Prepology is live at [prepology.kamaldhami.in](https://prepology.kamaldhami.in); its source is private for now. Link-UP is live at [link-up.kamaldhami.in](https://link-up.kamaldhami.in).
+
+Also on the shelf: [PixelShrink](https://github.com/KamalSDhami/PixelShrink), a drag-and-drop batch image compressor with background removal (Python, PySide6). A [tomato leaf disease](https://github.com/KamalSDhami/Tomato-Leaf-Disease-Detection) benchmark of VGG16, DenseNet121, InceptionV3, Xception and MobileNetV2 on 29K images, where VGG16 won at 96.6%. A [LangChain](https://github.com/KamalSDhami/LangChain) notebook, [Transformers](https://github.com/KamalSDhami/Transformers) experiments, a monitoring UI for [agent squads](https://github.com/KamalSDhami/AgentCrab), and a pile of lab work.
 
 ## Recently pushed to
 

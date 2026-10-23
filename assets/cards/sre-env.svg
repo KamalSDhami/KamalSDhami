@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="210" viewBox="0 0 580 210" role="img" aria-labelledby="t d">
+<title id="t">SRE Incident Response Env</title>
+<desc id="d">An agent gets paged, investigates a fake distributed system with CLI commands, and must find the root cause.</desc>
+<defs>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#16202b" stroke-width=".6"/></pattern>
+  <radialGradient id="halo"><stop stop-color="#ff7b72" stop-opacity=".22"/><stop offset="1" stop-color="#ff7b72" stop-opacity="0"/></radialGradient>
+  <clipPath id="clip"><rect width="580" height="210" rx="14"/></clipPath>
+</defs>
+<style>
+  .sans{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace}
+  
+  .alert{animation:blink 1.2s steps(1) infinite}
+  .trace{stroke-dasharray:5 9;animation:flow 2s linear infinite}
+  .scan{animation:scan 5s ease-in-out infinite}
+  @keyframes blink{50%{opacity:.25}}
+  @keyframes flow{to{stroke-dashoffset:-56}}
+  @keyframes scan{0%,100%{transform:translateX(0)}50%{transform:translateX(96px)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#clip)">
+  <rect width="580" height="210" fill="#0b0f14"/>
+  <rect width="580" height="210" fill="url(#grid)"/>
+  <circle cx="490" cy="105" r="110" fill="url(#halo)"/>
+  <text class="mono" x="24" y="40" font-size="12" fill="#ff7b72">openenv · agents</text>
+  <text class="sans" x="24" y="72" font-size="24" font-weight="700" fill="#e6edf3" letter-spacing="-.3">SRE Incident Response Env</text>
+  <text class="sans" x="24" y="104" font-size="14" fill="#8b949e">An agent gets paged, investigates a fake distributed</text><text class="sans" x="24" y="124" font-size="14" fill="#8b949e">system with CLI commands, and must find the root cause.</text>
+  <g class="mono" font-size="11.5"><rect x="24" y="165" width="62" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
+<text x="55" y="180" text-anchor="middle" fill="#8b949e">Python</text>
+<rect x="94.4" y="165" width="62" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
+<text x="126" y="180" text-anchor="middle" fill="#8b949e">Docker</text>
+<rect x="164.8" y="165" width="70" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
+<text x="200" y="180" text-anchor="middle" fill="#8b949e">OpenEnv</text></g>
+  <g transform="translate(400,15)">
+  <rect class="" x="18" y="40" width="40" height="26" rx="6" fill="#10161d" stroke="#1f2a36" stroke-width="1.4"/><text class="mono " x="38" y="57" font-size="9" text-anchor="middle" fill="#e6edf3">web</text>
+  <rect class="" x="70" y="40" width="40" height="26" rx="6" fill="#10161d" stroke="#1f2a36" stroke-width="1.4"/><text class="mono " x="90" y="57" font-size="9" text-anchor="middle" fill="#e6edf3">api</text>
+  <rect class="alert" x="122" y="40" width="40" height="26" rx="6" fill="#10161d" stroke="#ff7b72" stroke-width="1.4"/><text class="mono alert" x="142" y="57" font-size="9" text-anchor="middle" fill="#e6edf3">db</text>
+  <path class="trace" d="M70,53 H58" stroke="#4a9eff" stroke-width="1.4"/>
+  <path class="trace" d="M122,53 H110" stroke="#4a9eff" stroke-width="1.4"/>
+  <rect x="18" y="90" width="144" height="70" rx="8" fill="#10161d" stroke="#1f2a36"/>
+  <text class="mono" x="26" y="106" font-size="9" fill="#7ee787">$ query_logs db</text>
+  <text class="mono" x="26" y="120" font-size="9" fill="#8b949e">pool exhausted: 200/200</text>
+  <text class="mono" x="26" y="134" font-size="9" fill="#8b949e">leak &lt;- payment-svc</text>
+  <text class="mono" x="26" y="150" font-size="9" fill="#f0883e">&gt; diagnose root_cause</text>
+  <rect class="scan" x="22" y="94" width="40" height="62" rx="6" fill="#4a9eff" opacity=".07"/></g>
+  <rect x=".5" y=".5" width="579" height="209" rx="14" fill="none" stroke="#1f2a36"/>
+</g>
+</svg>

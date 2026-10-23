@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="210" viewBox="0 0 580 210" role="img" aria-labelledby="t d">
+<title id="t">Yukti</title>
+<desc id="d">Translates on demand and replies privately, so channels stay clean. Rate limits per user and server.</desc>
+<defs>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#16202b" stroke-width=".6"/></pattern>
+  <radialGradient id="halo"><stop stop-color="#f0883e" stop-opacity=".22"/><stop offset="1" stop-color="#f0883e" stop-opacity="0"/></radialGradient>
+  <clipPath id="clip"><rect width="580" height="210" rx="14"/></clipPath>
+</defs>
+<style>
+  .sans{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace}
+  
+  .b1{animation:swap 6s ease-in-out infinite}
+  .b2{animation:swap 6s ease-in-out infinite;animation-delay:3s}
+  .arrow{stroke-dasharray:4 8;animation:flow 2s linear infinite}
+  @keyframes swap{0%,45%{opacity:1}50%,95%{opacity:.25}}
+  @keyframes flow{to{stroke-dashoffset:-48}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g clip-path="url(#clip)">
+  <rect width="580" height="210" fill="#0b0f14"/>
+  <rect width="580" height="210" fill="url(#grid)"/>
+  <circle cx="490" cy="105" r="110" fill="url(#halo)"/>
+  <text class="mono" x="24" y="40" font-size="12" fill="#f0883e">discord bot</text>
+  <text class="sans" x="24" y="72" font-size="24" font-weight="700" fill="#e6edf3" letter-spacing="-.3">Yukti</text>
+  <text class="sans" x="24" y="104" font-size="14" fill="#8b949e">Translates on demand and replies privately, so</text><text class="sans" x="24" y="124" font-size="14" fill="#8b949e">channels stay clean. Rate limits per user and server.</text>
+  <g class="mono" font-size="11.5"><rect x="24" y="165" width="92" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
+<text x="70" y="180" text-anchor="middle" fill="#8b949e">discord.py</text>
+<rect x="124.0" y="165" width="62" height="22" rx="11" fill="#10161d" stroke="#1f2a36"/>
+<text x="155" y="180" text-anchor="middle" fill="#8b949e">SQLite</text></g>
+  <g transform="translate(400,15)">
+  <g class="b1">
+    <path d="M16,46 h100 a8,8 0 0 1 8,8 v22 a8,8 0 0 1 -8,8 h-70 l-12,12 v-12 h-18 a8,8 0 0 1 -8,-8 v-22 a8,8 0 0 1 8,-8 z" fill="#10161d" stroke="#1f2a36"/>
+    <text class="mono" x="30" y="68" font-size="10" fill="#e6edf3">hola, ¿cómo estás?</text>
+  </g>
+  <path class="arrow" d="M90,100 V118" stroke="#f0883e" stroke-width="1.6"/>
+  <g class="b2">
+    <path d="M56,122 h100 a8,8 0 0 1 8,8 v22 a8,8 0 0 1 -8,8 h-18 v12 l-12,-12 h-70 a8,8 0 0 1 -8,-8 v-22 a8,8 0 0 1 8,-8 z" fill="#10161d" stroke="#f0883e"/>
+    <text class="mono" x="68" y="144" font-size="10" fill="#e6edf3">hi, how are you?</text>
+    <text class="mono" x="68" y="156" font-size="7.5" fill="#8b949e">only you can see this</text>
+  </g></g>
+  <rect x=".5" y=".5" width="579" height="209" rx="14" fill="none" stroke="#1f2a36"/>
+</g>
+</svg>
