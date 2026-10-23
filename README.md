@@ -14,7 +14,7 @@ Full-stack engineer and ML student in Dehradun, India. I build web products end 
 
 | | What it is | Built with |
 |---|---|---|
-| [Prepology](https://github.com/KamalSDhami/prepology) | Study planner for Indian entrance exams. Elo ability estimates, FSRS spaced repetition, a mentor chat with guardrails, billing, an admin CMS. [Live](https://prepology.kamaldhami.in) | Flutter, Hono, Drizzle, Supabase, Groq |
+| [Prepology](https://prepology.kamaldhami.in) | Study planner for Indian entrance exams. Elo ability estimates, FSRS spaced repetition, a mentor chat with guardrails, billing, an admin CMS. Source is private for now. | Flutter, Hono, Drizzle, Supabase, Groq |
 | [Link-UP](https://github.com/KamalSDhami/Link-UP) | Teammate finder for project-based learning at my university. Enforces the one-member-per-section rule, has recruitment boards, DMs and auto-created team chats. [Live](https://link-up.kamaldhami.in) | React, TypeScript, Supabase realtime + RLS |
 | [ZenCube](https://github.com/KamalSDhami/ZenCube) | A small Linux sandbox written to understand how containers work: process isolation and resource limits with raw syscalls, plus a GUI. | C, Python |
 | [SRE Incident Response Env](https://github.com/KamalSDhami/meta) | An OpenEnv environment where an agent is paged, investigates a fake distributed system with CLI-style commands, and has to find the root cause. Six hand-written scenarios. | Python, Docker |
