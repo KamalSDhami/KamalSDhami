@@ -304,7 +304,8 @@ def activity_block(data, recent):
 
 def contrib_block(data):
     rows = []
-    for r in data["user"]["repositoriesContributedTo"]["nodes"]:
+    # A fine-grained token returns null for repos it cannot read.
+    for r in filter(None, data["user"]["repositoriesContributedTo"]["nodes"]):
         if r["isPrivate"]:
             continue                         # someone else's private repo: never auto-listed
         about = (r["description"] or "").strip().rstrip(".")
@@ -332,7 +333,7 @@ def main():
     if os.environ.get("PROFILE_TOKEN_SET") == "false":
         print("Token is not the profile owner's, so private repos are not visible. "
               "Add a PROFILE_TOKEN secret to include them.")
-    repos = [r for r in data["user"]["repositories"]["nodes"] if r["name"] not in HIDE]
+    repos = [r for r in data["user"]["repositories"]["nodes"] if r and r["name"] not in HIDE]
     recent = repos[:RECENT_COUNT]
 
     with open(os.path.join(HERE, "activity.svg"), "w", encoding="utf-8", newline="\n") as f:
