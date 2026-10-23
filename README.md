@@ -30,7 +30,7 @@ Also on the shelf: [PixelShrink](https://github.com/KamalSDhami/PixelShrink), a 
 ## Activity
 
 <!-- ACTIVITY:START -->
-<a href="https://github.com/KamalSDhami?tab=repositories&sort=pushed"><img src="assets/activity.svg" width="100%" alt="732 contributions in the last year. Recently pushed: kamaldhami (private), prepology (private), LangChain, alrlEEna-2026, Compiler_Lab, Transformers." /></a>
+<a href="https://github.com/KamalSDhami?tab=repositories&sort=pushed"><img src="assets/activity.svg" width="100%" alt="734 contributions in the last year. Recently pushed: kamaldhami (private), prepology (private), LangChain, alrlEEna-2026, Compiler_Lab, Transformers." /></a>
 
 <sub>Recently pushed: kamaldhami (private) · prepology (private) · [LangChain](https://github.com/KamalSDhami/LangChain) · [alrlEEna-2026](https://github.com/KamalSDhami/alrlEEna-2026) · [Compiler_Lab](https://github.com/KamalSDhami/Compiler_Lab) · [Transformers](https://github.com/KamalSDhami/Transformers). Redrawn every six hours by a GitHub Action.</sub>
 <!-- ACTIVITY:END -->
