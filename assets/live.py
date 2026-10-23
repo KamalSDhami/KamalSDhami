@@ -47,7 +47,16 @@ RECENT_COUNT = 6
 # Example:
 #   {"name": "owner/repo", "url": None, "about": "What it is.",
 #    "role": "What I did there."},
-EXTRA_CONTRIB = []
+EXTRA_CONTRIB = [
+    # Private repo, listed with the owner's OK (Oct 2026).
+    {"name": "hemalbadola/baton", "url": None,
+     "about": "Runs one LLM across several laptops on the same Wi-Fi, each holding a few "
+              "layers and passing activations along like a relay baton. "
+              "On PyPI as [baton-cluster](https://pypi.org/project/baton-cluster/).",
+     "role": "I'm the second-largest contributor: int8 and int4 quantized weights in the decoder, "
+             "recovery when a laptop drops out of the ring, per-hop network timing for the planner, "
+             "and the Windows installer and PyPI release pipeline."},
+]
 
 QUERY = """
 query($login: String!) {
@@ -307,7 +316,8 @@ def contrib_block(data):
         rows.append("- " + " ".join(bits))
     for e in EXTRA_CONTRIB:
         name = f'[{e["name"]}]({e["url"]})' if e.get("url") else f'**{e["name"]}** <sub>private</sub>'
-        rows.append(f'- {name} {e.get("about", "")} {e.get("role", "")}'.rstrip())
+        parts = [name] + [e[k].strip() for k in ("about", "role") if e.get(k, "").strip()]
+        rows.append("- " + "<br>".join(parts))
     if not rows:
         return ("Nothing public yet. My work outside my own repos so far has been in private ones, "
                 "so it shows up only in the heatmap above.\n")

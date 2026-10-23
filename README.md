@@ -38,7 +38,7 @@ Also on the shelf: [PixelShrink](https://github.com/KamalSDhami/PixelShrink), a 
 ## Outside my own repos
 
 <!-- CONTRIB:START -->
-Nothing public yet. My work outside my own repos so far has been in private ones, so it shows up only in the heatmap above.
+- **hemalbadola/baton** <sub>private</sub><br>Runs one LLM across several laptops on the same Wi-Fi, each holding a few layers and passing activations along like a relay baton. On PyPI as [baton-cluster](https://pypi.org/project/baton-cluster/).<br>I'm the second-largest contributor: int8 and int4 quantized weights in the decoder, recovery when a laptop drops out of the ring, per-hop network timing for the planner, and the Windows installer and PyPI release pipeline.
 <!-- CONTRIB:END -->
 
 ## Writing
