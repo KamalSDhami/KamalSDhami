@@ -28,9 +28,9 @@ Smaller things live in the repo list: a [LangChain](https://github.com/KamalSDha
 ## Recently pushed to
 
 <!-- RECENT:START -->
-- [kamaldhami](https://github.com/KamalSDhami/kamaldhami)
-- [prepology](https://github.com/KamalSDhami/prepology)
 - [LangChain](https://github.com/KamalSDhami/LangChain)
+- [alrlEEna-2026](https://github.com/KamalSDhami/alrlEEna-2026)
+- [Compiler_Lab](https://github.com/KamalSDhami/Compiler_Lab)
 <!-- RECENT:END -->
 
 <sub>Updated every six hours by a GitHub Action.</sub>
