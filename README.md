@@ -24,9 +24,9 @@ Also on the shelf: [PixelShrink](https://github.com/KamalSDhami/PixelShrink), a 
 ## Activity
 
 <!-- ACTIVITY:START -->
-<a href="https://github.com/KamalSDhami?tab=repositories&sort=pushed"><img src="assets/activity.svg" width="100%" alt="990 contributions in the last year. Recently pushed: Link-UP (private), prepology (private), PixelShrink, VirtuKey, kamaldhami (private), LangChain." /></a>
+<a href="https://github.com/KamalSDhami?tab=repositories&sort=pushed"><img src="assets/activity.svg" width="100%" alt="994 contributions in the last year. Recently pushed: prepology (private), Link-UP (private), PixelShrink, VirtuKey, kamaldhami (private), LangChain." /></a>
 
-<sub>Recently pushed: Link-UP (private) · prepology (private) · [PixelShrink](https://github.com/KamalSDhami/PixelShrink) · [VirtuKey](https://github.com/KamalSDhami/VirtuKey) · kamaldhami (private) · [LangChain](https://github.com/KamalSDhami/LangChain). Redrawn every six hours by a GitHub Action.</sub>
+<sub>Recently pushed: prepology (private) · Link-UP (private) · [PixelShrink](https://github.com/KamalSDhami/PixelShrink) · [VirtuKey](https://github.com/KamalSDhami/VirtuKey) · kamaldhami (private) · [LangChain](https://github.com/KamalSDhami/LangChain). Redrawn every six hours by a GitHub Action.</sub>
 <!-- ACTIVITY:END -->
 
 ## Outside my own repos
