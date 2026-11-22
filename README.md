@@ -24,14 +24,15 @@ Also on the shelf: [PixelShrink](https://github.com/KamalSDhami/PixelShrink), a 
 ## Activity
 
 <!-- ACTIVITY:START -->
-<a href="https://github.com/KamalSDhami?tab=repositories&sort=pushed"><img src="assets/activity.svg" width="100%" alt="1892 contributions in the last year. Recently pushed: kamaldhami (private), prepology (private), Link-UP (private), PixelShrink, VirtuKey, LangChain." /></a>
+<a href="https://github.com/KamalSDhami?tab=repositories&sort=pushed"><img src="assets/activity.svg" width="100%" alt="1902 contributions in the last year. Recently pushed: prepology (private), kamaldhami (private), Link-UP (private), PixelShrink, VirtuKey, LangChain." /></a>
 
-<sub>Recently pushed: kamaldhami (private) · prepology (private) · Link-UP (private) · [PixelShrink](https://github.com/KamalSDhami/PixelShrink) · [VirtuKey](https://github.com/KamalSDhami/VirtuKey) · [LangChain](https://github.com/KamalSDhami/LangChain). Redrawn every six hours by a GitHub Action.</sub>
+<sub>Recently pushed: prepology (private) · kamaldhami (private) · Link-UP (private) · [PixelShrink](https://github.com/KamalSDhami/PixelShrink) · [VirtuKey](https://github.com/KamalSDhami/VirtuKey) · [LangChain](https://github.com/KamalSDhami/LangChain). Redrawn every six hours by a GitHub Action.</sub>
 <!-- ACTIVITY:END -->
 
 ## Outside my own repos
 
 <!-- CONTRIB:START -->
+- [kgoedecke/doop](https://github.com/kgoedecke/doop) The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design together, live. MCP built in. <sub>★ 2263</sub>
 - **hemalbadola/baton** <sub>private</sub><br>Runs one LLM across several laptops on the same Wi-Fi, each holding a few layers and passing activations along like a relay baton. On PyPI as [baton-cluster](https://pypi.org/project/baton-cluster/).<br>I'm the second-largest contributor: int8 and int4 quantized weights in the decoder, recovery when a laptop drops out of the ring, per-hop network timing for the planner, and the Windows installer and PyPI release pipeline.
 <!-- CONTRIB:END -->
 
