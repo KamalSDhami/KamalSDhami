@@ -32,7 +32,7 @@ Also on the shelf: [PixelShrink](https://github.com/KamalSDhami/PixelShrink), a 
 ## Outside my own repos
 
 <!-- CONTRIB:START -->
-- [kgoedecke/doop](https://github.com/kgoedecke/doop) The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design together, live. MCP built in. <sub>★ 2272</sub>
+- [kgoedecke/doop](https://github.com/kgoedecke/doop) The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design together, live. MCP built in. <sub>★ 2281</sub>
 - **hemalbadola/baton** <sub>private</sub><br>Runs one LLM across several laptops on the same Wi-Fi, each holding a few layers and passing activations along like a relay baton. On PyPI as [baton-cluster](https://pypi.org/project/baton-cluster/).<br>I'm the second-largest contributor: int8 and int4 quantized weights in the decoder, recovery when a laptop drops out of the ring, per-hop network timing for the planner, and the Windows installer and PyPI release pipeline.
 <!-- CONTRIB:END -->
 
