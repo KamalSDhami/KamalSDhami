@@ -24,15 +24,15 @@ Also on the shelf: [PixelShrink](https://github.com/KamalSDhami/PixelShrink), a 
 ## Activity
 
 <!-- ACTIVITY:START -->
-<a href="https://github.com/KamalSDhami?tab=repositories&sort=pushed"><img src="assets/activity.svg" width="100%" alt="1917 contributions in the last year. Recently pushed: kamaldhami (private), lagsmith, prepology (private), Link-UP (private), PixelShrink, VirtuKey." /></a>
+<a href="https://github.com/KamalSDhami?tab=repositories&sort=pushed"><img src="assets/activity.svg" width="100%" alt="1929 contributions in the last year. Recently pushed: lagsmith, kamaldhami (private), prepology (private), Link-UP (private), PixelShrink, VirtuKey." /></a>
 
-<sub>Recently pushed: kamaldhami (private) · [lagsmith](https://github.com/KamalSDhami/lagsmith) · prepology (private) · Link-UP (private) · [PixelShrink](https://github.com/KamalSDhami/PixelShrink) · [VirtuKey](https://github.com/KamalSDhami/VirtuKey). Redrawn every six hours by a GitHub Action.</sub>
+<sub>Recently pushed: [lagsmith](https://github.com/KamalSDhami/lagsmith) · kamaldhami (private) · prepology (private) · Link-UP (private) · [PixelShrink](https://github.com/KamalSDhami/PixelShrink) · [VirtuKey](https://github.com/KamalSDhami/VirtuKey). Redrawn every six hours by a GitHub Action.</sub>
 <!-- ACTIVITY:END -->
 
 ## Outside my own repos
 
 <!-- CONTRIB:START -->
-- [doop-design/doop](https://github.com/doop-design/doop) The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design together, live. MCP built in. <sub>★ 2340</sub>
+- [doop-design/doop](https://github.com/doop-design/doop) The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design together, live. MCP built in. <sub>★ 2354</sub>
 - **hemalbadola/baton** <sub>private</sub><br>Runs one LLM across several laptops on the same Wi-Fi, each holding a few layers and passing activations along like a relay baton. On PyPI as [baton-cluster](https://pypi.org/project/baton-cluster/).<br>I'm the second-largest contributor: int8 and int4 quantized weights in the decoder, recovery when a laptop drops out of the ring, per-hop network timing for the planner, and the Windows installer and PyPI release pipeline.
 <!-- CONTRIB:END -->
 
